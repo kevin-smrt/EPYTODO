@@ -1,0 +1,21 @@
+### Récupère toutes les todo
+GET http://localhost:3000/todo
+
+### Récupère une todo avec son ID
+GET http://localhost:3000/todo/2
+
+### Création d'une todo
+POST http://localhost:3000/todo
+Content-Type: application/x-www-form-urlencoded
+
+title=test
+&description=test de création d'une tache
+&due_time=2022-11-05 14:30:28
+&user_id=36
+&status=todo
+
+### Mise à jour d'une todo avec son ID
+PUT http://localhost:3000/todo/2
+Content-Type: application/x-www-form-urlencoded
+
+title=nouveau titre
